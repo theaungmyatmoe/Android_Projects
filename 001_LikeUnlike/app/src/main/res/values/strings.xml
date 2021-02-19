@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LikeUnlike</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="total">3000 People Like This</string>
+</resources>

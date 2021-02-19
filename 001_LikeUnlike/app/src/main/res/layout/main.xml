@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<ImageView
+		android:id="@+id/likeImg"
+		android:layout_above="@+id/tv"
+		android:src="@drawable/like"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+
+	<ImageView
+		android:layout_above="@+id/tv"
+		android:src="@drawable/unlike"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/unlikeImg"
+		android:visibility="invisible"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_centerInParent="true"
+		android:id="@+id/tv"
+		android:text="@string/total"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10sp"
+		android:layout_below="@id/tv"
+		android:weightSum="10">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Like"
+			android:layout_weight="5"
+			android:id="@+id/like"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="UnLike"
+			android:layout_weight="5"
+			android:id="@+id/unlike"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

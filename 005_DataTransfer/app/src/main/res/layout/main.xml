@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<TextView
+		android:layout_marginTop="20dp"
+		android:textStyle="bold"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Medium Text"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/mainTv"/>
+
+	<EditText
+		android:layout_width="wrap_content"
+		android:hint="Type Something"
+		android:ems="10"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/mainTv"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/mainEt"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="SA"
+		android:layout_below="@id/mainEt"
+		android:layout_alignLeft="@id/mainEt"
+		android:id="@+id/startAct"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="SAFR"
+		android:layout_below="@id/mainEt"
+		android:layout_alignRight="@id/mainEt"
+		android:id="@+id/secStartAct"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="30dp"
+		android:text="I will be something"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@id/startAct"
+		android:id="@+id/tvResult"/>
+
+</RelativeLayout>
+

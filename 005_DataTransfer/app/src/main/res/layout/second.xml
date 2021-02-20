@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_gravity="center"
+		android:layout_marginTop="30dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="I will show something."
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:id="@+id/secondTv"/>
+
+	<RadioGroup
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginTop="30dp"
+		android:id="@+id/rGroup">
+
+		<RadioButton
+			android:id="@+id/rJava"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Java"
+			android:onClick="onRadioButtonClicked"/>
+
+		<RadioButton
+			android:id="@+id/rPython"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Python"
+			android:onClick="onRadioButtonClicked"/>
+
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="JS"
+			android:id="@+id/rJS"/>
+
+	</RadioGroup>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Finish"
+		android:id="@+id/finshBtn"/>
+
+</LinearLayout>
+

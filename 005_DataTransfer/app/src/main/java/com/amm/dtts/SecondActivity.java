@@ -8,7 +8,7 @@ public class SecondActivity extends Activity
 	private TextView secondTv;
 	private RadioGroup rGroup;
 	private Button finshBtn;
-	private RadioButton rJava,rPython,rJS;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -19,9 +19,14 @@ public class SecondActivity extends Activity
 		secondTv = findViewById(R.id.secondTv);
 		rGroup = findViewById(R.id.rGroup);
 		finshBtn = findViewById(R.id.finshBtn);
-		rJava = findViewById(R.id.rJava);
-		rPython = findViewById(R.id.rPython);
-		rJS = findViewById(R.id.rJS);
+		
+		
+		
+		Bundle bd = getIntent().getExtras();
+		String getStr = bd.getString("amm");
+		secondTv.setText(getStr);
+		
 	}
+	
 	
 }

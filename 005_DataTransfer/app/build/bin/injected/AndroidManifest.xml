@@ -32,7 +32,7 @@
 
 		</activity>
 
-		<actvity
+		<activity
 			android:name=".SecondActivity"/>
 
 	</application>

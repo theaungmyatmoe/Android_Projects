@@ -18,12 +18,13 @@ public final class R {
         public static final int mainEt=0x7f070001;
         public static final int mainTv=0x7f070000;
         public static final int rGroup=0x7f070006;
-        public static final int rJS=0x7f070009;
-        public static final int rJava=0x7f070007;
+        public static final int rJS=0x7f070007;
+        public static final int rJava=0x7f070009;
         public static final int rPython=0x7f070008;
         public static final int secStartAct=0x7f070003;
         public static final int secondTv=0x7f070005;
         public static final int startAct=0x7f070002;
+        public static final int tvChoosen=0x7f07000b;
         public static final int tvResult=0x7f070004;
     }
     public static final class layout {

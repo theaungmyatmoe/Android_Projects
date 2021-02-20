@@ -22,24 +22,24 @@
 		android:id="@+id/rGroup">
 
 		<RadioButton
-			android:id="@+id/rJava"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Java"
-			android:onClick="onRadioButtonClicked"/>
-
-		<RadioButton
-			android:id="@+id/rPython"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Python"
-			android:onClick="onRadioButtonClicked"/>
-
-		<RadioButton
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:text="JS"
 			android:id="@+id/rJS"/>
+		
+		
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Python"
+			android:id="@+id/rPython"/>
+		
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Java"
+			android:id="@+id/rJava"/>
+		
 
 	</RadioGroup>
 
@@ -48,6 +48,13 @@
 		android:layout_height="wrap_content"
 		android:text="Finish"
 		android:id="@+id/finshBtn"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Medium Text"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:id="@+id/tvChoosen"/>
 
 </LinearLayout>
 

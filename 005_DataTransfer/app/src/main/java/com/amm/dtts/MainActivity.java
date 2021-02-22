@@ -58,10 +58,28 @@ implements OnClickListener
 				
 				break;
 			case R.id.secStartAct:
+			//Start activity for result
+			Intent ii = new Intent(this,SecondActivity.class);
+			Bundle bb = new Bundle();
+			bb.putString("tts",str);
+			ii.putExtras(bb);
+			startActivityForResult(ii,0);
 				break;
 		}
 	}
 
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data)
+	{
+		super.onActivityResult(requestCode, resultCode, data);
+		if(resultCode == RESULT_OK){
+		Bundle bnd = data.getExtras();
+		tvResult.setText(bnd.getString("result"));
+		}
+	}
+
+
+	
 	@Override
 	protected void onPause()
 	{

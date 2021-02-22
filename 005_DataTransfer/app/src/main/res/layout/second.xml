@@ -22,24 +22,22 @@
 		android:id="@+id/rGroup">
 
 		<RadioButton
-			android:layout_width="wrap_content"
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:text="JS"
 			android:id="@+id/rJS"/>
-		
-		
+
 		<RadioButton
-			android:layout_width="wrap_content"
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:text="Python"
 			android:id="@+id/rPython"/>
-		
+
 		<RadioButton
-			android:layout_width="wrap_content"
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:text="Java"
 			android:id="@+id/rJava"/>
-		
 
 	</RadioGroup>
 

@@ -3,11 +3,13 @@ import android.app.*;
 import android.os.*;
 import android.widget.*;
 import android.widget.RadioGroup.*;
+import android.view.*;
+import android.content.*;
 
 public class SecondActivity extends Activity
-implements OnCheckedChangeListener
+implements OnCheckedChangeListener,OnClickListener
 {
-
+	
 	private TextView secondTv,tvChoosen;
 	private RadioGroup rGroup;
 	private Button finshBtn;
@@ -31,6 +33,9 @@ implements OnCheckedChangeListener
 		secondTv.setText(getStr);
 		
 		rGroup.setOnCheckedChangeListener(this);
+		finshBtn = findViewById(R.id.finshBtn);
+		finshBtn.setOnClickListener(this);
+		
 	}
 	
 	@Override
@@ -49,6 +54,16 @@ implements OnCheckedChangeListener
 		}
 	}
 	
+	@Override
+	public void onClick(View v)
+	{
+		Intent i = new Intent();
+		Bundle bd = new Bundle();
+		bd.putString("result",tvChoosen.getText().toString());
+		i.putExtras(bd);
+		setResult(RESULT_OK,i);
+		finish();
+	}
 	
 	
 }

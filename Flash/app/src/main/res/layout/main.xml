@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#8595A8">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="Welcome from WDE !!"
+		android:layout_marginTop="30dp"
+		android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+	<RadioGroup
+		android:id="@+id/rgp"
+		android:layout_marginTop="30dp"
+		android:layout_marginLeft="10sp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<RadioButton
+			android:id="@+id/callPhone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Call Phone"/>
+
+		<RadioButton
+			android:id="@+id/sendMail"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Send Mail"/>
+
+		<RadioButton
+			android:id="@+id/askQuestion"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Ask Quextion"/>
+
+	</RadioGroup>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Go"
+		android:layout_marginTop="10dp"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Text"
+		android:layout_marginTop="15dp"/>
+
+</LinearLayout>
+

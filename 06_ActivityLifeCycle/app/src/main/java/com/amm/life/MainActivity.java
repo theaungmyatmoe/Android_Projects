@@ -7,6 +7,7 @@ import android.view.*;
 import android.util.*;
 import android.view.View.*;
 import android.content.*;
+import android.content.res.*;
 
 public class MainActivity extends Activity implements
 OnClickListener
@@ -103,6 +104,18 @@ OnClickListener
 		// TODO: Implement this method
 		super.onRestoreInstanceState(savedInstanceState);
 		setBigToast("On restore state");
+	}
+
+	@Override
+	public void onConfigurationChanged(Configuration newConfig)
+	{
+		super.onConfigurationChanged(newConfig);
+		//setBigToast(String.valueOf(newConfig.orientation));
+		if(newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
+			setBigToast("Portrait");
+		}else{
+			setBigToast("Landscape");
+		}
 	}
 
 

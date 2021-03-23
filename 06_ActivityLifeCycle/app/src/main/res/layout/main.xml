@@ -6,6 +6,15 @@
 	android:orientation="vertical"
 	android:gravity="center">
 
+
+	<EditText
+		android:id="@+id/mainEditText"
+		android:layout_width="wrap_content"
+		android:ems="10"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="30dp"
+	/>
+
 	<Button
 		android:text="Go to another activity"
 		android:id="@+id/btnOne"
@@ -20,6 +29,7 @@
 		android:text="Three"
 		android:id="@+id/btnThree"
 		style="@style/mybtn"/>
+
 
 </LinearLayout>
 

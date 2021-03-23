@@ -28,7 +28,7 @@ OnClickListener
 		btnOne.setOnClickListener(this);
 		btnTwo.setOnClickListener(this);
 		btnThree.setOnClickListener(this);
-		Log.d("debug","Create");
+		
 
 	}
 

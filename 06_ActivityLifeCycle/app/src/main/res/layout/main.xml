@@ -7,12 +7,12 @@
 	android:gravity="center">
 
 	<Button
-		android:text="One"
+		android:text="Go to another activity"
 		android:id="@+id/btnOne"
 		style="@style/mybtn"/>
 
 	<Button
-		android:text="Two"
+		android:text="Finish Activity"
 		android:id="@+id/btnTwo"
 		style="@style/mybtn"/>
 

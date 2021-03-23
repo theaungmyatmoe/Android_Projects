@@ -18,13 +18,17 @@ OnClickListener
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+		
 		setBigToast("OnCreate");
+		
 		btnOne = findViewById(R.id.btnOne);
 		btnTwo = findViewById(R.id.btnTwo);
 		btnThree = findViewById(R.id.btnThree);
+		
 		btnOne.setOnClickListener(this);
 		btnTwo.setOnClickListener(this);
 		btnThree.setOnClickListener(this);
+		Log.d("debug","Create");
 
 	}
 
@@ -85,7 +89,24 @@ OnClickListener
 		setBigToast("OnDestory");
 	}
 
+	@Override
+	protected void onSaveInstanceState(Bundle outState)
+	{
+		// TODO: Implement this method
+		super.onSaveInstanceState(outState);
+		setBigToast("On save instamce state");
+	}
 
+	@Override
+	protected void onRestoreInstanceState(Bundle savedInstanceState)
+	{
+		// TODO: Implement this method
+		super.onRestoreInstanceState(savedInstanceState);
+		setBigToast("On restore state");
+	}
+
+
+	
 
 
 	public void setBigToast(String text)
@@ -94,7 +115,7 @@ OnClickListener
 		LinearLayout layout = (LinearLayout)toast.getView();
 		TextView tv = (TextView) layout.getChildAt(0);
 		tv.setTextSize(30);
-		toast.setGravity(Gravity.CENTER, 0, 0);
+		toast.setGravity(Gravity.TOP, 0, 0);
 		toast.show();
 
 	}

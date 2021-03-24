@@ -62,7 +62,7 @@ implements OnClickListener
 		{
 			tv.setGravity(Gravity.RIGHT);
 		}
-		else if (str.contentEquals("Center"))
+		else if(str.contentEquals("Center"))
 		{
 			tv.setGravity(Gravity.CENTER);
 		}

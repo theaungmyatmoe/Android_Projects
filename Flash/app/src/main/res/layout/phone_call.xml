@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	android:orientation="vertical">
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
 
-	<TextView
+	<EditText
+		android:inputType="phone"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:layout_height="wrap_content"
+		android:id="@+id/phoneNumberInput"/>
+
+	<Button
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Hello World"/>
+		android:text="Call"
+		android:layout_below="@id/phoneNumberInput"
+		android:layout_alignParentRight="true"
+		android:id="@+id/callPhone"/>
 
-</LinearLayout>
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Check Bill"
+		android:layout_below="@id/phoneNumberInput"
+		android:layout_toLeftOf="@id/callPhone"
+		android:id="@+id/checkBill"/>
+
+</RelativeLayout>
 

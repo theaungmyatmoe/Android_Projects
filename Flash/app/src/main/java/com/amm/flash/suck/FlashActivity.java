@@ -34,5 +34,14 @@ public class FlashActivity extends Activity
 		td.start();
 		
 	}
+
+	@Override
+	protected void onPause()
+	{
+		super.onPause();
+		finish();
+	}
+	
+	
 	
 }

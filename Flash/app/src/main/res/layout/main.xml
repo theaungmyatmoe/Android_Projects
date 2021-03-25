@@ -2,25 +2,16 @@
 <RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical">
-
-	<Button
-		android:id="@+id/dialPhone"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="30dp"
-		android:layout_marginLeft="20dp"
-		android:layout_marginRight="20dp"
-		android:text="Dial Phone"/>
+	android:layout_height="match_parent">
 
 	<Button
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_below="@id/dialPhone"
-		android:layout_marginLeft="20dp"
-		android:layout_marginRight="20dp"
-		android:text="Send Message"/>
+		android:text="Call Phone"
+		android:layout_marginRight="30dp"
+		android:layout_marginLeft="30dp"
+		android:layout_marginTop="15dp"
+		android:id="@+id/callBtn"/>
 
 </RelativeLayout>
 

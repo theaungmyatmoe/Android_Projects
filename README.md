@@ -1,14 +1,17 @@
-# Android_Projects
+# Android Developement
 
-# Project Lists
+This repo includes the android projects that i have learned from tutorials.
 
-001 - Like Unlike App
-002 - Toaster 
-003 - Text Play via JAVA
-004 - Intent Activity Change
-005 - Data Transfer via Intent
-006 - Activity Life Cycle
-007 - On Restore State 
-008 - Flash Activity and Call,Send Intents
-009 - CSS Design
-010 - Calculator Landscape UI (Using Linear Layout)
+
+# Projects List
+
+- [x] 001 - Like Unlike App
+- [x] 002 - Toaster 
+- [x] 003 - Text Play via JAVA
+- [x] 004 - Intent Activity Change
+- [x] 005 - Data Transfer via Intent
+- [x] 006 - Activity Life Cycle
+- [x] 007 - On Restore State 
+- [x] 008 - Flash Activity and Call,Send Intents
+- [x] 009 - Design
+- [x] 010 - Calculator Landscape UI (Using Linear Layout)

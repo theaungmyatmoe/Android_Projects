@@ -1,28 +1,28 @@
 package com.amm.flash.suck;
 import android.app.*;
-import android.os.*;
-import android.widget.*;
-import android.widget.SearchView.*;
-import android.view.*;
 import android.content.*;
 import android.net.*;
+import android.os.*;
+import android.view.*;
+import android.view.View.*;
+import android.widget.*;
 
 public class PhoneCallActivity extends Activity implements
 OnClickListener
 {
-	
-EditText edInput;
-Button ckBillBtn,callBtn;
+
+	EditText edInput;
+	Button ckBillBtn,callBtn;
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.phone_call);
-		
+
 		edInput = findViewById(R.id.phoneNumberInput);
 		callBtn = findViewById(R.id.callPhone);
 		ckBillBtn = findViewById(R.id.checkBill);
-		
+
 		callBtn.setOnClickListener(this);
 		ckBillBtn.setOnClickListener(this);
 	}
@@ -30,7 +30,8 @@ Button ckBillBtn,callBtn;
 	@Override
 	public void onClick(View v)
 	{
-		switch(v.getId()){
+		switch (v.getId())
+		{
 			case  R.id.callPhone:
 				String phNumber = edInput.getText().toString().trim();
 				Intent caller = new Intent(Intent.ACTION_CALL);
@@ -40,12 +41,12 @@ Button ckBillBtn,callBtn;
 			case R.id.checkBill:
 				String pound = Uri.encode("#");
 				Intent checkBillIntent = new Intent(Intent.ACTION_CALL);
-				checkBillIntent.setData(Uri.parse("tel:"+"*124"+pound));
+				checkBillIntent.setData(Uri.parse("tel:" + "*124" + pound));
 				startActivity(checkBillIntent);
 				break;
 		}
 	}
 
-	
-	
+
+
 }

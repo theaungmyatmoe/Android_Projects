@@ -25,6 +25,13 @@ public class MovieActivity extends Activity
 		String videoPath = "android.resource://com.amm.flash.suck/" + R.raw.wk;
 		Uri uri = Uri.parse(videoPath);
 		videoPlayer.setVideoURI(uri);
+		// set focus to video
+		videoPlayer.requestFocus();
+		// set controller 
+		MediaController controller = new MediaController(MovieActivity.this);
+		controller.setMediaPlayer(videoPlayer);
+		// add controller to media
+		videoPlayer.setMediaController(controller);
 		
 		playBtn.setOnClickListener(new View.OnClickListener(){
 

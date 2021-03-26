@@ -10,7 +10,7 @@ import android.net.*;
 
 public class MainActivity extends Activity implements OnClickListener
 {
-	private Button callBtn,sendImage;
+	private Button callBtn,sendImage,sendEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -20,9 +20,11 @@ public class MainActivity extends Activity implements OnClickListener
 
 		callBtn = findViewById(R.id.callBtn);
 		sendImage = findViewById(R.id.sendImage);
+		sendEmail = findViewById(R.id.sendEmail);
 		
 		callBtn.setOnClickListener(this);
 		sendImage.setOnClickListener(this);
+		sendEmail.setOnClickListener(this);
 		
     }
 
@@ -36,15 +38,32 @@ public class MainActivity extends Activity implements OnClickListener
 				startActivity(i);
 				break;
 			case R.id.sendImage:
-				Uri uri = Uri.parse("android.resource://com.amm.flash.suck/drawable/" + R.drawable.ic_launcher);
-				Intent sendImageIntent = new Intent(Intent.ACTION_SEND);
-				sendImageIntent.putExtra(Intent.EXTRA_STREAM,uri);
-				sendImageIntent.setType("image/*");
-				Intent chooser = Intent.createChooser(sendImageIntent,"Choose App!");
-				startActivity(chooser);
+				sendImage();
+				break;
+			case R.id.sendEmail:
+				sendEmail();
 				break;
 		}
 		
+	}
+
+	private void sendEmail()
+	{
+		Intent i = new Intent(MainActivity.this,SendMailActivity.class);
+		startActivity(i);
+	}
+
+	private void sendImage()
+	{
+		// get image path
+		Uri uri = Uri.parse("android.resource://com.amm.flash.suck/drawable/" + R.drawable.ic_launcher);
+		Intent sendImageIntent = new Intent(Intent.ACTION_SEND);
+		sendImageIntent.putExtra(Intent.EXTRA_STREAM,uri);
+		// set type
+		sendImageIntent.setType("image/*");
+		// create app chooser
+		Intent chooser = Intent.createChooser(sendImageIntent,"Choose App!");
+		startActivity(chooser);
 	}
 
 }

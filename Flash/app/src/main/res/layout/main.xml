@@ -23,5 +23,14 @@
 		android:layout_marginTop="15dp"
 		android:id="@+id/sendImage"/>
 
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Send Email"
+		android:layout_below="@id/sendImage"
+		android:layout_marginRight="30dp"
+		android:layout_marginLeft="30dp"
+		android:layout_marginTop="15dp"
+		android:id="@+id/sendEmail"/>
 </RelativeLayout>
 

@@ -20,6 +20,9 @@
         </activity>
 		<activity android:name=".MainActivity"></activity>
 		<activity android:name=".PhoneCallActivity"></activity>
+		<activity android:name=".SendMailActivity"></activity>
+		
+		
     </application>
 
 </manifest>

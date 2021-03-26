@@ -41,6 +41,9 @@
 		<activity
 			android:name=".PhoneCallActivity"/>
 
+		<activity
+			android:name=".SendMailActivity"/>
+
 	</application>
 
 </manifest>

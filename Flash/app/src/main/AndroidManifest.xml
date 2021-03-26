@@ -21,6 +21,7 @@
 		<activity android:name=".MainActivity"></activity>
 		<activity android:name=".PhoneCallActivity"></activity>
 		<activity android:name=".SendMailActivity"></activity>
+		<activity android:name=".MovieActivity"></activity>
 		
 		
     </application>

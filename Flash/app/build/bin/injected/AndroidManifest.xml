@@ -44,6 +44,9 @@
 		<activity
 			android:name=".SendMailActivity"/>
 
+		<activity
+			android:name=".MovieActivity"/>
+
 	</application>
 
 </manifest>

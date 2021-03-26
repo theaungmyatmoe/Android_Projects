@@ -49,5 +49,7 @@
 		android:layout_gravity="right"
 		android:id="@+id/sendMail"/>
 
+	
+
 </LinearLayout>
 

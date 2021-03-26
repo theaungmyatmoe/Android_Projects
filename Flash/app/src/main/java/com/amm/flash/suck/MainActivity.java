@@ -7,11 +7,12 @@ import android.view.View.*;
 import android.view.*;
 import android.content.*;
 import android.net.*;
+import android.widget.RadioGroup.*;
 
 public class MainActivity extends Activity implements OnClickListener
 {
-	private Button callBtn,sendImage,sendEmail;
-
+	private Button callBtn,sendImage,sendEmail,playMovie;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -21,12 +22,14 @@ public class MainActivity extends Activity implements OnClickListener
 		callBtn = findViewById(R.id.callBtn);
 		sendImage = findViewById(R.id.sendImage);
 		sendEmail = findViewById(R.id.sendEmail);
+		playMovie = findViewById(R.id.playMovie);
 		
 		callBtn.setOnClickListener(this);
 		sendImage.setOnClickListener(this);
 		sendEmail.setOnClickListener(this);
-		
+		playMovie.setOnClickListener(this);
     }
+	
 
 	@Override
 	public void onClick(View v)
@@ -43,8 +46,17 @@ public class MainActivity extends Activity implements OnClickListener
 			case R.id.sendEmail:
 				sendEmail();
 				break;
+			case R.id.playMovie:
+				playMovie();
+				break;
 		}
 		
+	}
+
+	private void playMovie()
+	{
+		Intent i = new Intent(MainActivity.this,MovieActivity.class);
+		startActivity(i);
 	}
 
 	private void sendEmail()
@@ -64,6 +76,7 @@ public class MainActivity extends Activity implements OnClickListener
 		// create app chooser
 		Intent chooser = Intent.createChooser(sendImageIntent,"Choose App!");
 		startActivity(chooser);
+		
 	}
 
 }

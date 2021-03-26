@@ -32,5 +32,18 @@
 		android:layout_marginLeft="30dp"
 		android:layout_marginTop="15dp"
 		android:id="@+id/sendEmail"/>
+	
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Play Movie"
+		android:layout_below="@id/sendEmail"
+		android:layout_marginRight="30dp"
+		android:layout_marginLeft="30dp"
+		android:layout_marginTop="15dp"
+		android:id="@+id/playMovie"/>
+
+	
+
 </RelativeLayout>
 

@@ -5,20 +5,22 @@
 	android:layout_height="match_parent"
 	android:gravity="center"
 	android:orientation="vertical"
-	android:background="@color/bg_primary"
->
+	android:background="@color/bg_primary">
 
 	<Button
 		android:text="Button"
-		style="@style/btn_primary"/>
+		style="@style/btn_btn_primary"
+		android:background="@drawable/btn_bg_warning"/>
 
 	<Button
 		android:text="Button"
-		style="@style/btn_primary"/>
+		style="@style/btn_btn_primary"
+		android:background="@drawable/btn_bg_purple"/>
 
 	<Button
 		android:text="Button"
-		style="@style/btn_primary"/>
+		style="@style/btn_btn_primary"
+		android:background="@drawable/btn_bg_danger"/>
 
 </LinearLayout>
 

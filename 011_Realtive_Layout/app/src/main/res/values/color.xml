@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<resources>
+		<color name="primary_color">#ede7f6</color>
+		
+		<color name="btn_one_start_color">#ef4444</color>
+		<color name="btn_one_end_color">#992f2f</color>
+		
+		<color name="btn_two_start_color">#a276eb</color>
+		<color name="btn_two_end_color">#6a3ab2</color>
+		
+	</resources>

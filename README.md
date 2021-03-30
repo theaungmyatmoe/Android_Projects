@@ -16,3 +16,4 @@ This repo includes the android projects that i have learned from tutorials.
 - [x] 009 - Design
 - [x] 010 - Calculator Landscape UI (Using Linear Layout)
 - [ ] 011 -  Relative Layout 
+- [ ] 012 - Check Box and Toggle Button

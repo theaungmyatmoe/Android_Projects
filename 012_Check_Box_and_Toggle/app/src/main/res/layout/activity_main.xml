@@ -30,30 +30,30 @@
 		android:layout_below="@id/activitymainView1"
 		android:text="Coffee 300"
 		android:layout_marginTop="15dp"
-		android:id="@+id/activitymainCheckBox1"
+		android:id="@+id/coffee"
 		android:layout_marginLeft="20dp"/>
 
 	<CheckBox
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_below="@id/activitymainCheckBox1"
+		android:layout_below="@id/coffee"
 		android:text="Milk 500"
-		android:id="@+id/activitymainCheckBox2"
+		android:id="@+id/milk"
 		android:layout_marginLeft="20dp"/>
 
 	<CheckBox
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_below="@id/activitymainCheckBox2"
+		android:layout_below="@id/milk"
 		android:text="Chocalate 600"
-		android:id="@+id/activitymainCheckBox3"
+		android:id="@+id/chocalate"
 		android:layout_marginLeft="20dp"/>
 
 	<TextView
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="Discount?"
-		android:layout_below="@id/activitymainCheckBox3"
+		android:layout_below="@id/chocalate"
 		android:layout_alignParentRight="true"
 		android:layout_marginRight="30dp"
 		android:id="@+id/activitymainTextView2"
@@ -64,7 +64,8 @@
 		android:layout_height="wrap_content"
 		android:layout_below="@id/activitymainTextView2"
 		android:layout_alignParentRight="true"
-		android:layout_marginRight="20dp"/>
+		android:layout_marginRight="20dp"
+		android:id="@+id/discountTg"/>
 
 	<TextView
 		android:layout_width="wrap_content"
@@ -73,7 +74,8 @@
 		android:textAppearance="?android:attr/textAppearanceMedium"
 		android:layout_centerHorizontal="true"
 		android:layout_alignParentBottom="true"
-		android:layout_marginBottom="20dp"/>
+		android:layout_marginBottom="20dp"
+		android:id="@+id/totalTv"/>
 
 </RelativeLayout>
 

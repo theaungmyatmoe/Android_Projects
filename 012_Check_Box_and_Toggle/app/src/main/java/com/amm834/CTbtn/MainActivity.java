@@ -29,6 +29,7 @@ OnClickListener
 				coffeeCk.setOnClickListener ( this );
 				milkCk.setOnClickListener ( this );
 				chocalateCk.setOnClickListener ( this );
+				
 
 			}
 
@@ -45,7 +46,6 @@ OnClickListener
 
 						case R.id.milk:
 							ShowToast.showToast ( MainActivity.this, "Milk" );
-
 							break;
 
 						case R.id.chocalate:
